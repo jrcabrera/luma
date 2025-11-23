@@ -1,0 +1,2328 @@
+/*===============================================
+Template Name: Life Coach - HTML5 Template
+Author: 
+Description: Description
+Version: 1.0.0
+Text Domain: Life Coach
+Tags:
+================================================*/
+
+/*TABLE OF Life Cocah*/
+/*=======================
+01. Life Cocah Header Menu Area Css
+02. Life Cocah Hero Area Css
+03. Life Cocah Brand Area Css
+04. Life Cocah Plan Area Css
+05. Life Cocah plan area two sArea Css
+06. Life Cocah Service Area Css
+07. Life Cocah Testimonial Area Css
+08. Life Cocah Choose US  Area Css
+09. Life Cocah Blog  Area Css
+10. Life Cocah Subscrib Area Css
+11. Life Cocah Fotter Area Css
+12. Life Cocah Bridcamb Area Css
+13. Life Cocah Blog Details Area Css
+14. Life Cocah Blog Area Css
+15. Life Cocah Blog Two  Area Css
+16. Life Cocah Faq Area Css
+17. Life Cocah Contact Area Css
+18. Life Cocah Service Details Area Css
+19. Life Cocah Service  Area Css
+20. Life Cocah Search Popup Area Css
+21. Life Cocah Loader Css
+=======================*/
+
+/*================================
+ <-- Life Cocah  Header Area Css-->
+==================================*/
+.header-area {
+    position: relative;
+    border-bottom: 1px solid rgba( 35, 35, 35,0.1);
+    z-index: 1;
+}
+
+.logo {
+    text-align: left;
+}
+
+.sticky {
+    left: 0;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    -webkit-box-shadow: 0 2px 5px -2px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px -2px rgba(0, 0, 0, 0.1);
+    background: #fff!important;
+    transition: .5s;
+    z-index: 2;
+    animation: 500ms running fadeInUp;
+    animation-name: slideInDown;
+}
+
+/*header-menu*/
+.header-menu {
+    text-align: right;
+}
+.header-menu ul {
+    display: inline-block;
+}
+.header-menu ul li {
+    display: inline-block;
+    list-style: none;
+    position: relative;
+}
+
+.header-menu ul li a {
+    display: inline-block;
+    font-size: 18px;
+    color: #232323;
+    font-weight: 400;
+    padding: 35px 22px;
+}
+
+/*header menu button*/
+.header-menu-button {
+    display: inline-block;
+}
+.header-menu-button a {
+    color: #ffffff;
+    text-align: center;
+    display: inline-block;
+    background: #8b1e43;
+    padding: 10px 33px;
+    border-radius: 5px;
+    border: 2px solid #8b1e43;
+    margin-left: 14px;
+}
+.header-menu-button a i {
+    display: inline-block;
+    margin-left: 10px;
+}
+.header-menu-button a:hover {
+    color: #8b1e43;
+    background: #fff;
+}
+
+
+
+/*sub-menu*/
+.header-menu ul li .sub-menu {
+    position: absolute;
+    top: 95px;
+    left: 0;
+    background: #fff;
+    width: 250px;
+    border-radius: 3px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    margin-top: 20px;
+    border-top: 2px solid #8b1e43;
+    visibility: hidden;
+    opacity: 0;
+    box-shadow: 0 0 23px rgb(0 0 0 / 10%);
+    border-bottom: 2px solid #8b1e43;
+    z-index: 1;
+}
+.header-menu ul li:hover .sub-menu{
+    top: 78px;
+    visibility: visible;
+    opacity: 1;
+}
+.header-menu ul li .sub-menu li {
+    display: block;
+}
+.header-menu ul li .sub-menu li a {
+    display: inline-block;
+    padding: 10px 25px;
+    margin: 0;
+    font-size: 16px;
+    color: #39374d;
+    text-transform: capitalize;
+    width: 100%;
+    text-align: left;
+}
+.header-menu ul li .sub-menu li a:hover{
+    background: #8b1e43;
+    color: #fff;
+}
+/*================================
+ <-- Life Coach  Hero  Area Css-->
+==================================*/
+.hero-area {
+    background: white;
+    height: 950px;
+    margin-top: -100px;
+    position: relative;
+}
+/*hero content*/
+.hero-sub-title h5 {
+    font-size: 14px;
+    color: #8b1e43;
+    font-style: italic;
+    margin-bottom: 26px;
+}
+.hero-main-title h1 {
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 65px;
+}
+.hero-description p {
+    width: 95%;
+    margin-top: 24px;
+}
+/*hero button*/
+.hero-button {
+    float: left;
+}
+.hero-button a {
+    display: inline-block;
+    background: #8b1e43;
+    color: #fff;
+    padding: 10px 33px;
+    border-radius: 5px;
+    margin-top: 25px;
+    border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.hero-button a:hover {
+    color: #8b1e43;
+}
+.hero-button a i {
+    display: inline-block;
+    margin-left: 10px;
+}
+.hero-button a:before {
+    position: absolute;
+    content: '';
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: -50px;
+    border-bottom: 55px solid #ffffff;
+    border-right: 30px solid transparent;
+    -webkit-transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    -ms-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+    transition: all 600ms ease;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    z-index: -1;
+}
+.hero-button a:hover:before{
+    -webkit-transform: translateX(-40%);
+    transform: translateX(-40%);
+}
+.hero-button a:after {
+    position: absolute;
+    content: '';
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: -50px;
+    border-left: 30px solid transparent;
+    border-bottom: 55px solid #ffffff;
+    -webkit-transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    -ms-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+    transition: all 600ms ease;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    z-index: -1;
+}
+.hero-button a:hover:after{
+    -webkit-transform: translateX(40%);
+    transform: translateX(40%);
+}
+/*heor video button*/
+.hero-video-button {
+    display: inline-block;
+}
+.hero-video-button a i {
+    background: #232323;
+    display: inline-block;
+    height: 52px;
+    width: 52px;
+    line-height: 52px;
+    text-align: center;
+    border-radius: 50%;
+    margin-left: 30px;
+    color: #fff;
+    margin-top: 24px;
+}
+.hero-video-button span {
+    color: #232323;
+    font-weight: 500;
+    margin-left: 10px;
+}
+/*hero thumb*/
+.hero-thumb {
+    padding: 107px 0 0 122px;
+}
+/*================================
+ <-- Life Coach  Brand  Area Css-->
+==================================*/
+.brand-area {
+    background: #02100e;
+    padding: 114px 0 114px;
+}
+.single-brand-item {
+    text-align: center;
+}
+.brand-thumb img {
+    transition: .5s;
+}
+.brand-thumb img:hover {
+    filter: brightness(0)invert(1);
+}
+.owl-carousel .owl-item img {
+    display: inline-block !important;
+}
+/*section title*/
+.section-title {
+    margin-bottom: 63px;
+}
+.section-sub-title h4 {
+    color: #8b1e43;
+    font-style: italic;
+    margin-bottom: 22px;
+}
+.section-description {
+    margin-top: 22px;
+}
+/*================================
+ <-- Lawyer  Plan  Area Css-->
+==================================*/
+.plan-area {
+    padding: 116px 0 55px;
+    border-bottom: 1px solid rgba( 35, 35, 35,0.1);
+}
+.plan-area .section-description p {
+    width: 77%;
+    margin: auto;
+}
+.section-button {
+    margin-top: 36px;
+}
+.section-button a {
+    display: inline-block;
+    background: transparent;
+    color: #8b1e43;
+    padding: 10px 33px;
+    border-radius: 5px;
+    border: 2px solid #8b1e43;
+    margin: 0 5px 0;
+    transition: .5s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.section-button a:hover{
+    color: #fff;
+}
+.section-button a:before {
+    position: absolute;
+    content: '';
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: -50px;
+    border-bottom: 55px solid #8b1e43;
+    border-right: 30px solid transparent;
+    -webkit-transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    -ms-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+    transition: all 600ms ease;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    z-index: -1;
+}
+.section-button a:hover:before{
+    -webkit-transform: translateX(-40%);
+    transform: translateX(-40%);
+}
+.section-button a:after {
+    position: absolute;
+    content: '';
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: -50px;
+    border-left: 30px solid transparent;
+    border-bottom: 55px solid #8b1e43;
+    -webkit-transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    -ms-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+    transition: all 600ms ease;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    z-index: -1;
+}
+.section-button a:hover:after{
+    -webkit-transform: translateX(40%);
+    transform: translateX(40%);
+}
+a.active1 {
+    background: #8b1e43;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+a.active1:hover{
+    color:#8b1e43;
+}
+a.active1:before {
+    position: absolute;
+    content: '';
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: -50px;
+    border-bottom: 55px solid #fff;
+    border-right: 30px solid transparent;
+    -webkit-transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    -ms-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+    transition: all 600ms ease;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    z-index: -1;
+}
+a.active1:hover:before{
+    -webkit-transform: translateX(-40%);
+    transform: translateX(-40%);
+}
+a.active1:after {
+    position: absolute;
+    content: '';
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: -50px;
+    border-left: 30px solid transparent;
+    border-bottom: 55px solid #fff;
+    -webkit-transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    -ms-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+    transition: all 600ms ease;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    z-index: -1;
+}
+a.active1:hover:after{
+    -webkit-transform: translateX(40%);
+    transform: translateX(40%);
+}
+.section-button a i {
+    display: inline-block;
+    margin-left: 10px;
+}
+/*================================
+ <-- Life  Plan area Two  Area Css-->
+==================================*/
+.plan-area-two {
+    background: url(assets/images/plan-thumb.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 735px;
+}
+.plan-video-icon {
+    text-align: center;
+}
+.plan-video-icon a i {
+    display: inline-block;
+    height: 77px;
+    width: 77px;
+    line-height: 77px;
+    background: rgba(255,255,255,0.5);
+    border-radius: 50%;
+    font-size: 16px;
+    text-align: center;
+    color: #8b1e43;
+    position: relative;
+    z-index: 1;
+    -webkit-animation: ripple-white 1s linear infinite;
+    animation: ripple-blue 1s linear infinite;
+}
+
+@-webkit-keyframes ripple-blue {
+0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(255,255,255, 0.3), 0 0 0 10px rgba(255,255,255, 0.3), 0 0 0 20px rgba(255,255,255, 0.3);
+    box-shadow: 0 0 0 0 rgba(255,255,255, 0.3), 0 0 0 10px rgba(255, 255, 255, 0.3), 0 0 0 20px rgba(255,255,255, 0.3)
+}
+100% {
+    -webkit-box-shadow: 0 0 0 10px rgba(255,255,255, 0.3), 0 0 0 20px rgba(255, 255, 255, 0.3), 0 0 0 30px rgba(255, 255, 255, 0);
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.3), 0 0 0 20px rgba(255, 255, 255, 0.3), 0 0 0 30px rgba(255, 255, 255, 0)
+}
+}
+
+@keyframes ripple-blue {
+0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(255,255,255, 0.3), 0 0 0 10px rgba(255,255,255, 0.3), 0 0 0 20px rgba(255,255,255, 0.3);
+    box-shadow: 0 0 0 0 rgba(255,255,255, 0.3), 0 0 0 10px rgba(255,255,255, 0.3), 0 0 0 20px rgba(255,255,255, 0.3)
+}
+100% {
+    -webkit-box-shadow: 0 0 0 10px rgba(255,255,255, 0.3), 0 0 0 20px rgba(255,255,255, 0.3), 0 0 0 30px rgba(255,255,255, 0);
+    box-shadow: 0 0 0 10px rgba(255,255,255, 0.3), 0 0 0 20px rgba(255,255,255, 0.3), 0 0 0 30px rgba(255,255,255, 0)
+}
+}
+.plan-video-icon a i:after {
+    position: absolute;
+    content: "";
+    left: 9px;
+    top: 9px;
+    height: 60px;
+    width: 60px;
+    background: #fff;
+    border-radius: 50%;
+    z-index: -1;
+}
+/*================================
+ <-- Life  Service  Area Css-->
+==================================*/
+.serivce-area {
+    padding: 115px 0 90px;
+    background: #f9f9f9;
+}
+/*service single box*/
+/*
+.service-single-box {
+    text-align: center;
+    padding: 41px 27px 30px;
+    box-shadow: 0px 5px 15px rgba(103,103,103,0.08);
+    background: #fff;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 1;
+    transition: .5s;
+}
+.service-single-box:before {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 0%;
+    background: #8b1e43;
+    border-radius: 5px;
+    z-index: -1;
+    transition: .5s;
+}
+.service-single-box:hover:before {
+    width: 100%;
+    left: 0;
+}
+*/
+.service-single-box {
+    text-align: center;
+    background: #fff;
+    padding: 40px 34px 33px;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 30px;
+}
+
+.service-single-box:hover::before{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.service-single-box:hover::after{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.service-single-box::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    clip-path: polygon(0 0, 100% 0%, 100% 101%);
+    transform: scale(0);
+    transform-origin: top right;
+    background: linear-gradient(-86deg, #8b1e43 0%, #8b1e43 100%);
+    pointer-events: none;
+    transition: .5s;
+    border-radius: 5px;
+    opacity: .5;
+    z-index: -1;
+    height: 100%;
+}
+
+.service-single-box:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    clip-path: polygon(0% 0%, 0% 100%, 101% 100%);
+    transform: scale(0);
+    transform-origin: bottom left;
+    background: linear-gradient(-86deg, #8b1e43 0%, #8b1e43 100%);
+    pointer-events: none;
+    transition: .5s;
+    border-radius: 5px;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.service-icon img {
+    transition: .5s;
+}
+.service-title h3 {
+    margin: 35px 0 18px;
+    transition: .5s;
+}
+.service-description p {
+    transition: .5s;
+}
+/*service btn*/
+.service-btn a {
+    display: inline-block;
+    margin-top: 8px;
+    color: #232323;
+    transition: .5s;
+}
+.service-btn a:hover{
+    color: #8b1e43;
+}
+.service-btn a i {
+    display: inline-block;
+    margin-left: 8px;
+}
+/*all hover*/
+.service-single-box:hover .service-icon img {
+    filter: brightness(0)invert(1);
+}
+.service-single-box:hover .service-title h3{
+    color: #fff;
+}
+.service-single-box:hover .service-description p{
+    color: #fff;
+}
+.service-single-box:hover .service-btn a{
+    color: #fff;
+}
+/*================================
+ <--Start Life coach Service  area Style Two Css-->
+==================================*/
+.serivce-area.style-two .section-description p {
+    width: 83%;
+    margin: auto;
+}
+.serivce-area.style-two .service-icon {
+    margin-bottom: 15px;
+    display: inline-block;
+    height: 120px;
+    width: 120px;
+    line-height: 120px;
+    background: #8b1e43;
+    border-radius: 50%;
+    font-size: 55px;
+    transition: .5s;
+}
+.serivce-area.style-two .service-single-box:hover .service-icon {
+    background: #fff;
+}
+.serivce-area.style-two .service-single-box .service-icon img {
+    filter: brightness(0)invert(1);
+}
+.serivce-area.style-two .service-single-box:hover .service-icon img {
+    filter: brightness(0)invert(0);
+}
+
+/*================================
+ <-- Life   Testimonial  Area Css-->
+==================================*/
+.testimoial-area {
+    padding: 118px 0 142px;
+}
+/*testimonial single box*/
+.testimonial-single-box {
+    text-align: center;
+    background: #f9f9f9;
+    padding: 35px 54px 25px;
+    position: relative;
+    border-radius: 5px;
+    z-index: 1;
+}
+.testimonial-single-box:before {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 0%;
+    background: #8b1e43;
+    border-radius: 5px;
+    z-index: -1;
+    transition: .5s;
+}
+.testimonial-single-box:hover:before {
+    width: 100%;
+    left: 0;
+}
+/*testi-icon*/
+.testi-icon {
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+    top: 109px;
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+    background: #fff;
+    display: inline-block;
+    border-radius: 50%;
+    box-shadow: 0px 10px 15px rgba(41,37,50,0.1);
+}
+.testi-title h3 {
+    font-size: 20px;
+    margin: 15px 0 17px;
+    transition: .5s;
+}
+.testi-description p{
+    transition: .5s;
+}
+/*testi-shape-icon*/
+.testi-shape-icon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+/*all hover*/
+.testimonial-single-box:hover .testi-title h3{
+    color: #fff;
+}
+.testimonial-single-box:hover .testi-description p{
+    color: #fff;
+}
+/*owl nav*/
+.owl-nav {
+    position: relative;
+    right: 0;
+    left: 0;
+    text-align: center;
+    margin: auto;
+    top: 32px;
+}
+.owl-prev {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 20px;
+}
+.owl-prev :hover {
+    color: #8b1e43;
+}
+.owl-next {
+    display: inline-block;
+    font-size: 20px;
+}
+.owl-next :hover{
+    color: #8b1e43;
+}
+/*================================
+ <-- Life Coach  Choose us  Area Css-->
+==================================*/
+.chosse-us-area {
+	background: url(assets/images/choose.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	padding: 240px 0 240px;
+}
+.choose-us-right .section-description p {
+    opacity: 0.702;
+    color: #ffffff;
+    width: 86%;
+}
+.choose-us-right .section-description p {
+    opacity: 0.702;
+    color: #ffffff;
+}
+.choose-us-right {
+    position: relative;
+    margin-left: 98px;
+}
+.choose-us-right .section-title {
+    margin-bottom: 16px;
+}
+.choose-us-right .section-main-title h1 {
+    color: #fff;
+}
+.choose-us-btn {
+    float: left;
+}
+.choose-us-btn a {
+    background: #fff;
+    display: inline-block;
+    color: #8b1e43;
+    padding: 10px 33px;
+    border-radius: 5px;
+    margin-top: 25px;
+    border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.choose-us-btn a:before {
+    position: absolute;
+    content: '';
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: -50px;
+    border-bottom: 55px solid #8b1e43;
+    border-right: 30px solid transparent;
+    -webkit-transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    -ms-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+    transition: all 600ms ease;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    z-index: -1;
+}
+.choose-us-btn a:hover:before{
+    -webkit-transform: translateX(-40%);
+    transform: translateX(-40%);
+}
+.choose-us-btn a:after {
+    position: absolute;
+    content: '';
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: -50px;
+    border-left: 30px solid transparent;
+    border-bottom: 55px solid #8b1e43;
+    -webkit-transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    -ms-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+    transition: all 600ms ease;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    z-index: -1;
+}
+.choose-us-btn a:hover:after{
+    -webkit-transform: translateX(40%);
+    transform: translateX(40%);
+}
+.choose-us-btn a:hover{
+    color: #fff;
+}
+.choose-us-btn a i {
+    display: inline-block;
+    margin-left: 10px;
+}
+.choose-singthur img {
+    margin-top: 21px;
+    margin-left: 33px;
+}
+/*================================
+ <-- Life Coach  Blog  Area Css-->
+==================================*/
+.blog-area {
+    padding: 118px 0 120px;
+}
+.blog-area {
+    padding: 118px 0 120px;
+}
+.blog-area .owl-nav {
+    position: relative;
+    right: 0;
+    left: 0;
+    text-align: center;
+    margin: auto;
+    top: 25px;
+}
+/*section blog button*/
+.blog-button {
+    text-align: right;
+}
+.blog-button a {
+    background: #8b1e43;
+    color: #fff;
+    padding: 10px 33px;
+    border: 2px solid transparent;
+    display: inline-block;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.blog-button a:hover{
+    color: #8b1e43;
+}
+.blog-button a:before {
+    position: absolute;
+    content: '';
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: -50px;
+    border-bottom: 55px solid #fff;
+    border-right: 30px solid transparent;
+    -webkit-transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    -ms-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+    transition: all 600ms ease;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    z-index: -1;
+}
+.blog-button a:hover:before{
+    -webkit-transform: translateX(-40%);
+    transform: translateX(-40%);
+}
+.blog-button a:after {
+    position: absolute;
+    content: '';
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: -50px;
+    border-left: 30px solid transparent;
+    border-bottom: 55px solid #fff;
+    -webkit-transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    -ms-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+    transition: all 600ms ease;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    z-index: -1;
+}
+.blog-button a:hover:after{
+    -webkit-transform: translateX(40%);
+    transform: translateX(40%);
+}
+.blog-button a i {
+    display: inline-block;
+    margin-left: 10px;
+}
+/*single-blog-box*/
+.single-blog-box {
+    overflow: hidden;
+    transition: .5s;
+    border-radius: 5px;
+    box-shadow: 0 0 9px rgb(0 0 0 / 10%);
+    margin-bottom: 3px;
+}
+/*single-blog-thumb*/
+.single-blog-thumb{
+    overflow: hidden;
+    transition: .5s;
+}
+.single-blog-thumb img {
+    width: 100%;
+    transition: .5s;
+}
+.single-blog-box:hover .single-blog-thumb img {
+    transform: scale(1.1);
+}
+/*blog content*/
+.blog-content {
+    padding: 22px 25px 0px;
+}
+.blog-title h3 a {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 22px;
+    color: #0A3831;
+    font-family: 'Poppins';
+    transition: .5s;
+    margin-top: 5px;
+    margin-bottom: 12px;
+}
+.blog-title h3 a:hover{
+    color: #8b1e43;
+}
+.blog-btn a {
+    display: inline-block;
+    color: #646464;
+    margin-bottom: 21px;
+}
+.blog-btn a:hover{
+    color: #8b1e43;
+}
+
+/*================================
+ <-- Life Coach  Subscribe  Area Css-->
+==================================*/
+.subscribe-area {
+    background: url(assets/images/subscribe.png);
+    padding: 107px 0 120px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.subscribe-title h1 {
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.subscribe-description p {
+    color: #fff;
+    opacity: 0.702;
+}
+/*newsletter form input*/
+.newsletter-form input {
+	width: 28%;
+	height: 55px;
+	border-radius: 5px;
+	margin-right: 146px;
+	outline: 0;
+	border: 0;
+	margin-top: 15px;
+	padding: 0 25px;
+}
+.newsletter-form input::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 22px;
+    color: #7f7f7f;
+}
+/*form btn button*/
+.form-btn button {
+    position: absolute;
+    margin-top: -54px;
+    right: 688px;
+    padding: 11px 22px;
+    color: #ffffff;
+    border-radius: 5px;
+    background: #8b1e43;
+    border: 0;
+    border: 2px solid transparent;
+    transition: .5s;
+}
+.form-btn button:hover{
+    border: 2px solid #8b1e43;
+    background: #fff;
+    color: #8b1e43;
+}
+/*================================
+ <-- Life coach  Footer  Area Css-->
+==================================*/
+.footer-area {
+/*    background: #0A3831;*/
+    background: linear-gradient(to bottom, rgba(10, 56, 49, 1) 84%, rgba(0, 0, 0, 1) 100%);
+    padding: 115px 0 15px;
+    position: relative;
+}
+.footer-area:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 86px;
+    height: 1px;
+    width: 100%;
+    background: #fff;
+    opacity: 0.149;
+}
+
+/*footer-widget-title*/
+.footer-widget-title h2 {
+    font-size: 22px;
+    color: #E3DAC9;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+.footer-widget-description p {
+    color: #E3DAC9;
+    margin-top: 51px;
+    opacity: 0.702;
+}
+.footer-widget-follow ul li {
+    list-style: none;
+    display: inline-block;
+}
+.footer-widget-follow ul li a {
+    display: inline-block;
+    color: #8b1e43;
+    height: 31px;
+    width: 31px;
+    line-height: 31px;
+    background: #E3DAC9;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 10px;
+    margin-top: 15px;
+    transition: .5s;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    border: 1px solid #E3DAC9;
+}
+.footer-widget-follow ul li a:hover {
+    color: #E3DAC9;
+    border: 1px solid transparent;
+}
+.footer-widget-follow a:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0%;
+    background: #8b1e43;
+    border-radius: 50%;
+    z-index: -1;
+    transition: .5s;
+}
+.footer-widget-follow a:hover:before {
+    width: 100%;
+}
+.footer-widget-follow ul li a:hover {
+    background: #8b1e43;
+    color: #E3DAC9;
+}
+/*company widget info*/
+.company-widget-info ul li {
+    list-style: none;
+}
+.company-widget-info ul li a {
+    opacity: 0.702;
+    color: #E3DAC9;
+    display: inline-block;
+    margin-bottom: 19px;
+}
+.company-widget-info ul li a:hover {
+    color: #E3DAC9;
+    opacity: 1;
+
+}
+.company-widget-info-list ul li {
+    list-style: none;
+}
+/*company widget info list*/
+.company-widget-info-list ul li a {
+    display: inline-block;
+    color: #E3DAC9;
+    opacity: 0.702;
+    margin-bottom: 19px;
+    transition: .5s;
+}
+.company-widget-info-list ul li a:hover {
+    color: #E3DAC9;
+    opacity: 1;
+}
+/*company-widget-address */
+.widget-address-icon {
+    float: left;
+}
+.widget-address-icon i{
+    margin-right: 10px;
+    color: #E3DAC9;
+}
+.comapny-widget-desc p{
+    overflow: hidden;
+    color: #E3DAC9;
+    margin-bottom: 20px;
+    opacity: 0.702;
+}
+.company-widget-address ul li{
+    list-style: none;
+}
+.company-widget-address ul li {
+    color: #fff;
+    margin-bottom: 20px;
+    opacity: 0.702;
+}
+.company-widget-address ul li i {
+    margin-right: 10px;
+    color: #E3DAC9;
+}
+
+/*footer bottom*/
+.footer-bottom-content {
+    margin-top: 120px;
+    text-align: center;
+}
+.footer-bottom-content p {
+    color: #E3DAC9;
+    opacity: 0.702;
+}
+.footer-bottom-content p span {
+    color: #8b1e43;
+}
+/*
+<!-- ============================================================== -->
+<!--  Life coach  breadcumb-area -->
+<!-- ============================================================== -->*/
+.breadcumb-area {
+    background: url(assets/images/bridcam.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 370px;
+    position: relative;
+}
+.breadcumb-area:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(10, 56, 49, 1));
+}
+.breacumb-content {
+    text-align: center;
+    z-index: 1;
+    position: relative;
+}
+.breadcumb-title h1 {
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.breadcumb-content-text a {
+    color: #fff;
+    font-weight: 500;
+    transition: .5s;
+}
+.breadcumb-content-text i {
+    color: #fff;
+    font-size: 16px;
+    margin: 0 10px 0;
+}
+.breadcumb-content-text span {
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #fff;
+}
+
+/*==============================*/
+/*Start Life coach About  Area*/
+/*==============================*/
+.about-area {
+    padding: 120px 0 120px;
+}
+.about-area  .section-title {
+    margin-bottom: 25px;
+}
+.about-area .section-description p {
+    color: #232323;
+    font-size: 20px;
+    width: 94%;
+}
+.about-left {
+    position: relative;
+    margin-left: -148px;
+} 
+.about-test {
+    margin-bottom: 41px;
+}
+.about-icon-box {
+    background: #fff;
+    box-shadow: 0 1px 10px 0px rgb(0 0 0 / 12%);
+    padding: 15px 20px 15px;
+    position: relative;
+    z-index: 1;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+.about-icon {
+    display: inline-block;
+}
+.about-icon i {
+    color: #fff;
+    font-size: 20px;
+    background: #8b1e43;
+    height: 36px;
+    width: 36px;
+    line-height: 36px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 3px;
+    margin-right: 8px;
+    transition: .5s;
+}
+
+.about-icon-box:before {
+    width: 0;
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    height: 100%;
+    background: #8b1e43;
+    transition: .5s;
+    z-index: -1;
+    border-radius: 5px;
+}
+.about-icon-box:hover:before {
+    width: 100%;
+    left: 0;
+}
+.about-title {
+    display: inline-block;
+}
+/*all hover*/
+.about-icon-box:hover .about-icon i {
+    background: #fff;
+    color: #8b1e43;
+}
+.about-icon-box:hover .about-title h3 {
+    color: #fff;
+}
+
+
+/*==============================*/
+/*Start Life coach Priching  Area*/
+/*==============================*/
+.priching-area {
+    background: #F8F8FF;
+    padding: 110px 0 120px;
+}
+.priching-area .section-description p {
+    width: 55%;
+    margin: auto;
+}
+
+.priching-single-box {
+    background: #fff;
+    padding: 31px 0px 50px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0px 5px 12.5px rgba(92,98,207,0.06);
+    transition: .5s;
+}
+.priching-single-box:hover {
+    box-shadow: 0px 10px 15.5px rgba(71, 77, 192, 0.09);
+}
+
+/* priching table */
+.priching-table {
+    position: absolute;
+    top: -18px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.priching-table span {
+    background: #8b1e43;
+    display: inline-block;
+    font-size: 17px;
+    color: #fff;
+    padding: 3px 30px;
+}
+h3.priching-table-title {
+    font-size: 25px;
+    margin-top: 14px;
+}
+/* priching table dolar */
+.priching-table-dolar h1 {
+    font-size: 40px;
+    color: #8b1e43;
+    margin: 15px 0 40px;
+}
+.priching-table-dolar span.doler-style {
+    font-size: 17px;
+    position: relative;
+    bottom: 9px;
+    left: -6px;
+}
+/* priching table body */
+.priching-table-body ul li {
+    list-style: none;
+    border-top: 1px solid rgba(100,100,100,0.2);
+    padding: 10px 0;
+}
+.priching-table-body ul li:last-child{
+    border-bottom: 1px solid rgba(100,100,100,0.2);
+}
+.priching-table-body ul li i {
+    font-size: 14px;
+    color: #8b1e43;
+    float: right;
+    position: relative;
+    right: 27px;
+    display: inline-block;
+    top: 6px;
+}
+/*priching button*/
+.priching-button {
+    margin-top: 50px;
+}
+.priching-button a {
+    z-index: 1;
+    background: transparent;
+    color: #8b1e43;
+    display: inline-block;
+    padding: 10px 32px;
+    border: 1px solid #8b1e43;
+    position: relative;
+    overflow: hidden;
+}
+.priching-button a:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    height: 100%;
+    background: #8b1e43;
+    width: 0;
+    z-index: -1;
+    transition: .5s;
+}
+
+.priching-button a.active {
+    background: #8b1e43;
+    color: #fff;
+}
+
+.priching-button a i {
+    margin-left: 10px;
+    font-size: 15px;
+}
+/*all hover*/
+
+.priching-single-box:hover .priching-button a:after {
+    width: 100%;
+    left: 0;
+}
+.priching-single-box:hover .priching-button a {
+    color: #fff;
+}
+/*==============================*/
+/*Start Life coach Service Details Area*/
+/*==============================*/
+.service-details-area {
+    padding: 120px 0 94px;
+}
+.life-service-details-thubm img {
+    width: 100%;
+}
+.service-page-title h1 {
+    margin: 25px 0 14px;
+}
+/*service-details-left*/
+.service-details-left {
+    background: #fff;
+    padding: 25px;
+    box-shadow: 0 0 5px rgb(0 0 0 / 20%);
+}
+.service-dtls-form-field input {
+	width: 100%;
+	border: 1px solid #8b1e43;
+	outline: none;
+	height: 50px;
+	border-radius: 5px;
+	padding: 0 18px;
+	padding-right: 54px;
+}
+.service-search-btn button {
+    position: absolute;
+    top: 37px;
+    right: 46px;
+    border: none;
+    background: none;
+    color: #8b1e43;
+}
+/*service-page-title2*/
+.service-details-thumb img {
+    width: 100%;
+}
+.service-page-title2 h1 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.widget-service-details-icon p {
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+.widget-service-details-icon p i {
+    font-size: 20px;
+    color: #8b1e43;
+    margin-right: 10px;
+    display: inline-block;
+    position: relative;
+    top: 4px;
+}
+/*single-service-details-bpx*/
+.service-details-sidebar-box {
+    position: relative;
+    margin-left: 20px;
+}
+.single-service-details-box {
+    background: #fff;
+    padding: 25px;
+    box-shadow: 0 0 5px rgb(0 0 0 / 20%);
+    margin-top: 40px;
+}
+.single-widget-list h3 {
+    font-size: 22px;
+    margin-bottom: 37px;
+}
+.single-widget-list ul li {
+    list-style: none;
+    padding: 18px 0 15px;
+    border-top: 1px solid rgb(103 103 103 / 8%);
+}
+.single-widget-list ul li a {
+    display: inline-block;
+    color: #616161;
+}
+.single-widget-list ul li:hover a {
+    color: #8b1e43;
+}
+/*single-sidebar-widget*/
+.single-sidebar-widget h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 41px;
+    margin-bottom: 25px;
+}
+.single-sidebar-widget span {
+    font-size: 18px;
+    color: #8b1e43;
+}
+.single-sidebar-widget ul li {
+    list-style: none;
+    background: #fff;
+    padding: 12px 0 12px;
+    border: 1px solid #8b1e43;
+}
+ul.style li {
+    margin-bottom: 20px;
+}
+.single-sidebar-widget ul li a {
+    display: inline-block;
+    color: #616161;
+    margin-left: 26px;
+    font-weight: 500;
+}
+.single-sidebar-widget ul li:hover a {
+    color: #8b1e43;
+}
+.single-sidebar-widget ul li a i {
+    display: inline-block;
+    margin-right: 13px;
+    font-size: 16px;
+}
+/*single-help-widget*/
+.single-help-widget {
+    box-shadow: 0 0 23px rgb(0 0 0 / 10%);
+    padding: 24px 31px 20px;
+    border-radius: 5px;
+}
+.single-help-wideget-content h3 {
+    font-size: 23px;
+    margin-bottom: 7px;
+}
+.single-widget-icon li {
+    list-style: none;
+}
+.single-widget-icon li i {
+    color: #8b1e43;
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    background: rgba(115, 63, 234,0.1);
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    box-shadow: 0px 5px 15px rgb(103 103 103 / 8%);
+}
+.single-widget-icon li a {
+    display: inline-block;
+    color: #39374d;
+    margin-left: 10px;
+}
+.single-widget-icon li a:hover {
+    color: #8b1e43;
+}
+
+/*================================
+ <--Start Life coach Blog-Details area Css-->
+==================================*/
+.blog-details-area {
+    padding: 120px 0 120px;
+}
+.blog-two-area {
+	padding: 120px 0 120px;
+}
+.blog-details-area .single-blog-box {
+    margin-bottom: 30px;
+}
+.single-blog-details-thumb img {
+    width: 100%;
+}
+.blog-details-content {
+    padding: 25px 30px 39px;
+    box-shadow: 0 5px 30px rgb(0 0 0 / 20%);
+}
+.blog-details-meta {
+    display: inline-block;
+}
+.blog-details-meta a {
+    display: inline-block;
+    margin-right: 18px;
+    color: #646464;
+}
+.meta-blog-right {
+    display: inline-block;
+    margin-left: 18px;
+}
+.meta-blog-right a {
+    color: #646464;
+}
+.blog-details-title a h1 {
+    display: inline-block;
+    font-size: 38px;
+    color: #39374d;
+}
+.blog-details-content-text {
+    margin: 10px 0 23px;
+    text-align: justify;
+}
+.single-blogs-thumb img {
+    width: 100%;
+}
+.blog-details-text p {
+    margin: 23px 0 0px;
+    text-align: justify;
+}
+.blog-details-content-text-inner p {
+    text-align: justify;
+    margin: 18px 0 23px;
+}
+.blog-details-title-two {
+    margin-top: 25px;
+}
+.blog-details-social-address.style {
+    border-top: 1px solid #8b1e43;
+    padding-top: 30px;
+}
+.blog-details-social-address ul li {
+    list-style: none;
+}
+.blog-details-social-address ul li a {
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    border: 1px solid #8b1e43;
+    border-radius: 5px;
+    margin-right: 8px;
+    text-align: center;
+    font-size: 15px;
+	transition:.5s;
+    color: #8b1e43;
+}
+/*from box*/
+.contact-box {
+    background: #fff;
+    box-shadow: 0 5px 30px rgb(0 0 0 / 20%);
+    padding: 25px 29px 29px;
+    margin-top: 35px;
+}
+.contact-title h2 {
+    font-size: 21px;
+    margin: 0 0 30px;
+}
+.form_box input {
+    height: 50px;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,0.1);
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-weight: 500;
+    padding: 0 10px;
+    outline: 0;
+}
+.form_box textarea {
+    width: 100%;
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0,0.1);
+    padding: 10px 0px 0 15px;
+    font-weight: 500;
+    outline: 0;
+}
+.form-button button {
+    display: inline-block;
+    background: #8b1e43;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    border: 2px solid transparent;
+    transition: .5s;
+}
+.form-button button:hover{
+    background: #fff;
+    border: 2px solid #8b1e43;
+    color: #8b1e43;
+}
+/*sidebar-box*/
+.blog-sidebar {
+	position: relative;
+	margin-left: 20px;
+}
+.sidebar-box {
+    background: #fff;
+    box-shadow: 0 0 23px rgb(0 0 0 / 10%);
+    padding: 30px 40px 30px;
+    margin-bottom: 30px;
+}
+h3.sidber-title {
+    margin-bottom: 22px;
+}
+.form-boxs {
+    position: relative;
+}
+.form-boxs input {
+    width: 100%;
+    height: 45px;
+    padding: 0 12px;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 5px;
+    outline: 0;
+}
+.search-button {
+    position: absolute;
+    bottom: 6px;
+    right: 11px;
+}
+.search-button button {
+    border: none;
+    background: #fff;
+}
+/*blog-details-pn-list*/
+.sidebar-menu ul li {
+    list-style: none;
+    background: #fff;
+    margin-bottom: 10px;
+    padding: 12px 0 12px 12px;
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0,0.1);
+    display: block;
+}
+.sidebar-menu ul li a {
+    color: #646464;
+    font-size: 18px;
+    transition: .5s;
+}
+.sidebar-menu ul li a:hover {
+    color: #8b1e43;
+}
+.sidebar-menu ul li a span i {
+    margin-right: 15px;
+}
+.resent-post-single-box {
+    margin-bottom: 20px;
+}
+.sidebar-thumb-content {
+    margin-left: 13px;
+}
+.sidebar-thumb-title a h2 {
+    font-size: 17px;
+    display: inline-block;
+    margin: 0 0 3px;
+	transition:.5s;
+}
+.sidebar-thumb-title span {
+    font-size: 14px;
+}
+/*Tags-Cloud*/
+.Tags-Cloud-title a {
+    display: inline-block;
+    border: solid 1px #8b1e43;
+    padding: 6px 15px;
+    border-radius: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    transition: .5s;
+    color: #646464;
+}
+
+/*all hover*/
+.blog-details-meta a:hover {
+    color: #8b1e43;
+}
+.blog-details-meta span:hover {
+    color: #8b1e43;
+}
+.meta-blog-right a:hover {
+    color: #8b1e43;
+}
+.blog-details-title a h1:hover {
+    color: #8b1e43;
+}
+.blog-details-social-address ul li a:hover {
+    background: #8b1e43;
+    color: #fff;
+}
+.sidebar-thumb-title a h2:hover {
+    color: #8b1e43;
+}
+.Tags-Cloud-title a:hover {
+    background: #8b1e43;
+    color: #fff;
+}
+
+
+
+/***
+======================================================
+<-- Life cocah Faq Area Css -->
+======================================================***/
+.faq-area {
+    padding: 120px 0 120px;
+}
+.faq-thumb img {
+    width: 100%;
+    border-radius: 5px;
+}
+/*accordion*/
+.tab_container {
+    position: relative;
+    margin-left: 16px;
+}
+h1.faq-title {
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+.accordion li {
+    list-style: none;
+    padding: 2px 0px 15px;
+    position: relative;
+    z-index: 1;
+}
+.accordion li a {
+    position: relative;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff !important;
+    z-index: 1;
+}
+
+.accordion li p {
+    display: none;
+    font-size: 16px;
+    color: #B1B2B4;
+    padding: 25px 0 10px 30px;
+    margin: 0;
+}
+
+.accordion a:before {
+    width: 2px;
+    height: 10px;
+    background: #fff;
+    position: absolute;
+    right: 32px;
+    content: " ";
+    top: 22px;
+    transform: rotate(0deg);
+    transition: all 0.2s ease-in-out;
+}
+
+.accordion a:after {
+    width: 10px;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    right: 28px;
+    content: " ";
+    top: 26px;
+    transition: all 0.2s ease-in-out;
+}
+
+.accordion a.active:after {
+    transform: rotate(0deg);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    background: #fff;
+    z-index: -1;
+}
+
+.accordion a.active:before {
+    display: none;
+}
+
+.faq-area a.active {
+    color: #fff !important;
+    border: 2px solid #232323!important;
+    background: #232323!important;
+}
+
+.accordion li a span {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+}
+
+.accordion li a span:after {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    left: -35px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: url(../images/resource/question.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+}
+
+/* Faq New Style */
+
+.faq-area .accordion li a {
+    padding: 16px 20px 16px 30px;
+    border-radius: 30px;
+    border: 2px solid #8b1e43;
+    background: #8b1e43;
+}
+
+.faq-area .accordion li a span:after {
+    display: none;
+}
+
+.faq-area .accordion li p {
+    padding: 25px 0 25px 30px;
+    color: #646464;
+}
+/*google-maps*/
+.google-maps iframe {
+    width: 100%;
+    height: 400px;
+}
+/*================================
+ <--Start Life Coach Contacts   Css-->
+=================================*/
+.contact-area {
+	background: #fff;
+	padding: 120px 0 113px;
+}
+.contact-area .section-description p {
+    width: 60%;
+    margin: auto;
+}
+.row.contact_bg {
+    margin-bottom: 112px;
+}
+/*contact-single-box*/
+.contact-single-box {
+    background: #fff;
+    box-shadow: 0 0 23px rgb(0 0 0 / 10%);
+    padding: 50px 20px 40px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.contact-icon i {
+    color: #fff;
+    font-size: 25px;
+    margin-right: 30px;
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: #8b1e43;
+    display: inline-block;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+.contact-text h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+.contact-text p {
+    margin-bottom: 0;
+}
+.contact-area .form_box input {
+    margin-bottom: 0;
+    width: 100%;
+    height: 60px;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,0.1);
+    padding: 0px 39px;
+    outline: 0;
+}
+.from-icon i {
+    position: relative;
+    top: -45px;
+    left: 16px;
+    color: #8b1e43;
+}
+.contact-area .form_box textarea {
+    width: 100%;
+    height: 120px;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,0.1);
+    padding: 15px 12px;
+    outline: 0;
+}
+
+.contact-form-button button {
+    padding: 11px 59px;
+    font-size: 16px;
+    font-weight: 500;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    background: #8b1e43;
+    color: #fff;
+    transition: .5s;
+    margin-top: 24px;
+}
+.contact-form-button button:hover{
+    color: #8b1e43;
+    background: #fff;
+    border: 2px solid #8b1e43;
+}
+
+
+/*
+<!-- ============================================================== -->
+<!-- Hendre Scrollup Button Section -->
+<!-- ============================================================== -->*/
+
+.scroll-area{
+    position: relative;
+    z-index: 999;
+   }
+  
+  .scroll-area .go-top {
+      position: fixed;
+      cursor: pointer;
+      top: 0;
+      right: 30px;
+      color: #ffffff;
+      background-image: -moz-linear-gradient(0deg, #d1651a 0%, #8b1e43 100%);
+      background-image: -webkit-linear-gradient(0deg, #d1651a 0%, #8b1e43 100%);
+      z-index: 9999;
+      width: 45px;
+      text-align: center;
+      height: 45px;
+      line-height: 42px;
+      opacity: 0;
+      visibility: hidden;
+      -webkit-transition: all 0.9s ease-out 0s;
+      -moz-transition: all 0.9s ease-out 0s;
+      border-radius: 10px; 
+  }
+  
+  .scroll-area .go-top i {
+        position: absolute;
+        top: 50%;
+        left: -4px;
+        right: 0;
+        margin: 0 auto;
+        font-size: 15px;
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: all 0.5s ease-out 0s;
+        -moz-transition: all 0.5s ease-out 0s;
+    }
+  
+  .scroll-area .go-top i:last-child {
+      opacity: 0;
+      visibility: hidden;
+      top: 60%; 
+  }
+  
+  .scroll-area .go-top::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background-image: linear-gradient(to right, #232353 0%, #232353 100%);
+      background-image: -ms-linear-gradient(0deg, #232353 0%, #232353 100%);
+      opacity: 0;
+      visibility: hidden;
+      -webkit-transition: all 0.5s ease-out 0s;
+      -moz-transition: all 0.5s ease-out 0s;
+      border-radius: 100%;
+  }
+  
+  .scroll-area .go-top:focus, .scroll-area .go-top:hover {
+        color: #fff; 
+    }
+  
+  .scroll-area .go-top:focus::before, .scroll-area .go-top:hover::before {
+          opacity: 1;
+          visibility: visible; 
+  }
+  
+  .scroll-area .go-top:focus i:first-child, .scroll-area .go-top:hover i:first-child {
+          opacity: 0;
+          top: 0;
+          visibility: hidden;
+   }
+  
+  .scroll-area .go-top:focus i:last-child, .scroll-area .go-top:hover i:last-child {
+          opacity: 1;
+          visibility: visible;
+          top: 50%; 
+  }
+  
+  .scroll-area .go-top.active {
+      top: 95%;
+      -webkit-transform: translateY(-98%);
+      -moz-transform: translateY(-98%);
+      opacity: 1;
+      visibility: visible;
+      border-radius: 0;
+      right: 30px;
+      border-radius:100%;
+  }
+  
+  .top-wrap {
+    position: relative; 
+  }
+  
+  .top-wrap .go-top-button {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      line-height: 40px;
+      text-align: center;
+      color: #fff;
+      top: 3px;
+      z-index: 1;
+      background: #8b1e43;
+  }
+  
+   .top-wrap .go-top-button i {
+        font-size: 20px;
+        font-weight: 700;
+        padding-left: 4px;
+        color: #fff;
+   }
+  
+  .top-wrap .go-top-button::after {
+      z-index: -1;
+      content: "";
+      position: absolute;
+      left: 3px;
+      top: 3px;
+      width: 45px;
+      height: 45px;
+      -webkit-animation: ripple 1.6s ease-out infinite;
+      -moz-animation: ripple 1.6s ease-out infinite;
+      opacity: 0;
+      background-image: -moz-linear-gradient(0deg, #da242b 0%, #8b1e43 100%);
+      background-image: -webkit-linear-gradient(0deg, #da242b 0%, #8b1e43 100%);
+      border-radius: 100%;
+  }
+  
+  .top-wrap .go-top-button:hover {
+        background-color: #222;
+        color: #fff; 
+    }
+  @keyframes ripple {
+    0%, 35% {
+      -webkit-transform: scale(0);
+      -moz-transform: scale(0);
+      -ms-transform: scale(0);
+      -o-transform: scale(0);
+      transform: scale(0);
+      opacity: 1; }
+    50% {
+      -webkit-transform: scale(1.5);
+      -moz-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+      -o-transform: scale(1.5);
+      transform: scale(1.5);
+      opacity: 0.8; }
+    100% {
+      opacity: 0;
+      -webkit-transform: scale(2);
+      -moz-transform: scale(2);
+      -ms-transform: scale(2);
+      -o-transform: scale(2);
+      transform: scale(2); } }
+  
+/*===========================
+<-- Moving Loader Css -->
+=============================*/
+.loader-wrapper {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.8s 1s ease;
+    z-index: 999;
+}
+
+.loader {
+    position: relative;
+    display: block;
+    z-index: 201;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    margin: -50px 0 0 -50px;
+    border-radius: 50%;
+    transition: all 1s 1s ease;
+    border: 3px solid transparent;
+    border-top-color: #0A3831;
+    -webkit-animation: spin 1.5s linear infinite;
+    -moz-animation: spin 1.5s linear infinite;
+    -o-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+}
+
+.loader:before {
+    position: absolute;
+    content: '';
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    bottom: 6px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-left-color: #8b1e43;
+    -webkit-animation: spin 2s linear infinite;
+    -moz-animation: spin 2s linear infinite;
+    -o-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+.loader:after {
+    position: absolute;
+    content: '';
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-right-color: #FA8A75;
+    -webkit-animation: spin 2.5s linear infinite;
+    -moz-animation: spin 2.5s linear infinite;
+    -o-animation: spin 2.5s linear infinite;
+    animation: spin 2.5s linear infinite;
+}
+
+/*/ Here comes the Magic /*/
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.loader-wrapper .loder-section {
+    position: fixed;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background: #fff;
+    z-index: 2;
+}
+
+.loader-wrapper .loder-section.left-section {
+    left: 0;
+    transition: 1s 1.4s ease;
+}
+
+.loader-wrapper .loder-section.right-section {
+    right: 0;
+    transition: 1s 1.4s ease;
+}
+
+/*/ When page loaded /*/
+.loaded .loder-section.left-section {
+    left: -100%;
+}
+
+.loaded .loder-section.right-section {
+    right: -100%;
+}
+
+.loaded .loader-wrapper {
+    visibility: hidden;
+}
+
+.loaded .loader {
+    top: -100%;
+    opacity: 0;
+}
