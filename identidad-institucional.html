@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>LUMA Gestión Humana y Mentoring</title>
+	<title>LUMA Gestión Humana y Mentoring - Identidad Institucional</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Favicon -->
@@ -40,6 +40,94 @@
 
 	<!-- modernizr js -->
 	<script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
+	<style>
+		.intro-text {
+			background: #f9f9f9;
+			padding: 40px;
+			border-radius: 5px;
+			margin-bottom: 50px;
+		}
+
+		.intro-text p {
+			font-size: 18px;
+			line-height: 32px;
+			margin-bottom: 0;
+		}
+
+		.section-divider {
+			margin: 60px 0;
+		}
+
+		.quote-box {
+			background: #0A3831;
+			color: #E3DAC9;
+			padding: 40px;
+			border-radius: 5px;
+			text-align: center;
+			font-size: 22px;
+			font-style: italic;
+			line-height: 36px;
+			margin-top: 60px;
+		}
+
+		/* Cajas minimalistas para Propósito, Misión, Visión */
+		.pmv-box {
+			background: #ffffff;
+			border: 2px solid #e6e6e6;
+			border-radius: 8px;
+			padding: 35px 25px;
+			height: 100%;
+			transition: all 0.3s ease;
+			position: relative;
+			overflow: hidden;
+		}
+
+		.pmv-box:hover {
+			border-color: #0A3831;
+			box-shadow: 0 8px 20px rgba(10, 56, 49, 0.1);
+			transform: translateY(-5px);
+		}
+
+		.pmv-box::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 4px;
+			background: linear-gradient(to right, #0A3831, #FA8A75);
+		}
+
+		.pmv-label {
+			font-size: 14px;
+			font-weight: 600;
+			color: #FA8A75;
+			text-transform: uppercase;
+			letter-spacing: 1.5px;
+			margin-bottom: 15px;
+			display: block;
+		}
+
+		.pmv-title {
+			font-size: 22px;
+			font-weight: 700;
+			color: #0A3831;
+			margin-bottom: 15px;
+			line-height: 30px;
+		}
+
+		.pmv-description {
+			font-size: 16px;
+			color: #646464;
+			line-height: 26px;
+			margin-bottom: 0;
+		}
+
+		.pmv-row {
+			margin-top: 50px;
+			margin-bottom: 60px;
+		}
+	</style>
 </head>
 
 <body>
@@ -138,121 +226,118 @@
 	<!-- End  Mobile Menu Area -->
 	<!--==================================================-->
 
-
-
 	<!--==================================================-->
-	<!-- Start  life coach Hero Area -->
+	<!-- Start Life coach Bridcamb Area -->
 	<!--==================================================-->
-	<div class="hero-area d-flex align-items-center">
+	<div class="breadcumb-area d-flex align-items-center">
 		<div class="container">
-			<div class="row d-flex align-items-center">
-				<div class="col-lg-6 col-md-6">
-					<!--hero-content-->
-					<div class="hero-content">
-						<div class="hero-sub-title">
-							<h5>MÉTODO • HUMANIDAD • CLARIDAD</h5>
+			<div class="row">
+				<div class="col-md-12">
+					<!--breadcumb-content-->
+					<div class="breacumb-content">
+						<div class="breadcumb-title">
+							<h1>Identidad Institucional</h1>
 						</div>
-						<div class="hero-main-title">
-							<h1>Lideramos Procesos</h1>
-							<h1>Unimos Esfuerzos</h1>
-							<h1>Maximizamos Soluciones</h1>
+						<div class="breadcumb-content-text">
+							<a href="index.html">Inicio</a><i class="fas fa-angle-right"></i><span>Identidad
+								Institucional</span>
 						</div>
-						<!--hero-description-->
-						<div class="hero-description">
-							<p>La experiencia no es más que actuar en lo cierto y en lo incierto, en lo simple y en lo
-								complejo.</p>
-						</div>
-						<!--hero-button-->
-						<div class="section-button">
-							<a href="#">Avanza<i class="bi bi-arrow-right"></i></a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-6 col-md-6">
-					<div class="hero-thumb">
-						<img src="assets/images/hero-thumb.png" alt="hero img">
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 	<!--==================================================-->
-	<!-- End  life coach Hero Area -->
+	<!-- End  Moving Bridcamb Area -->
 	<!--==================================================-->
 
 
 	<!--==================================================-->
-	<!-- Start  life coach Plan Area -->
+	<!-- Start  life coach About Area -->
 	<!--==================================================-->
-	<div class="plan-area">
+	<div class="about-area">
 		<div class="container">
+			<!-- Introducción -->
 			<div class="row">
 				<div class="col-lg-12">
-					<!--section title-->
+					<div class="intro-text">
+						<p>En LUMA Gestión Humana y Mentoring trabajamos como una red profesional articulada por un
+							núcleo especializado en gestión humana y <em>mentoring</em>. Integramos conocimiento
+							técnico, enfoque ético y colaboración interdisciplinaria para diseñar soluciones que
+							fortalecen el desarrollo humano y organizacional. Actuamos con método, humanidad y claridad
+							en cada proyecto.</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Propósito, Misión, Visión en un solo row -->
+			<div class="row pmv-row">
+				<!-- Propósito -->
+				<div class="col-lg-4 col-md-12">
+					<div class="pmv-box">
+						<span class="pmv-label">Nuestro Propósito</span>
+						<h2 class="pmv-title">Impulsar el desarrollo humano y organizacional</h2>
+						<p class="pmv-description">A través de procesos reales de aprendizaje, gestión y acompañamiento
+							que mejoran el desempeño y fortalecen la confianza en los equipos.</p>
+					</div>
+				</div>
+
+				<!-- Misión -->
+				<div class="col-lg-4 col-md-12">
+					<div class="pmv-box">
+						<span class="pmv-label">Nuestra Misión</span>
+						<h2 class="pmv-title">Diseñar proyectos que conectan generaciones</h2>
+						<p class="pmv-description">Diseñar y ejecutar proyectos de gestión humana y <em>mentoring</em>
+							que conecten generaciones, fortalezcan competencias y consoliden prácticas de trabajo
+							efectivas.</p>
+					</div>
+				</div>
+
+				<!-- Visión -->
+				<div class="col-lg-4 col-md-12">
+					<div class="pmv-box">
+						<span class="pmv-label">Nuestra Visión</span>
+						<h2 class="pmv-title">Ser un referente latinoamericano</h2>
+						<p class="pmv-description">Ser un referente latinoamericano en gestión humana y
+							<em>mentoring</em> por la calidad metodológica, la ética profesional y el impacto positivo.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Valores Organizacionales -->
+			<div class="row section-divider">
+				<div class="col-lg-12">
 					<div class="section-title text-center">
 						<div class="section-sub-title">
-							<h4>¿POR QUÉ ELEGIRNOS?</h4>
+							<h4>VALORES ORGANIZACIONALES</h4>
 						</div>
 						<div class="section-main-title">
-							<h1>Pensamos con método, actuamos con</h1>
-							<h1>humanidad y comunicamos con claridad.</h1>
+							<h1>Los principios que guían nuestro trabajo</h1>
 						</div>
 						<div class="section-description">
-							<p>Impulsamos el desarrollo humano y organizacional a través de procesos reales de
-								aprendizaje, gestión y acompañamiento que fortalecen la confianza y el desempeño en los
-								equipos.</p>
-						</div>
-						<div class="section-button">
-							<a class="active1" href="#">Identidad Institucional<i class="bi bi-arrow-right"></i></a>
-							<a href="#">Cultura LUMA<i class="bi bi-arrow-right"></i></a>
+							<p style="color: #646464;">Estos valores definen nuestra identidad profesional y orientan
+								cada decisión, proceso y
+								relación que establecemos con nuestros clientes y colaboradores.</p>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</div>
-	<!--==================================================-->
-	<!-- End  life coach Plan Area -->
-	<!--==================================================-->
 
-
-
-	<!--==================================================-->
-	<!-- Start  life coach Service Area -->
-	<!--==================================================-->
-	<div class="serivce-area">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<!--section title-->
-					<div class="section-title text-center">
-						<div class="section-sub-title">
-							<h4>ECOSISTEMA DE SERVICIOS</h4>
-						</div>
-						<div class="section-main-title">
-							<h1>Aprendizaje, experiencia y propósito<br>al servicio del talento humano.</h1>
-						</div>
-					</div>
-				</div>
-			</div>
 			<div class="row">
 				<div class="col-lg-4 col-md-6">
 					<!--service single box-->
 					<div class="service-single-box">
 						<div class="service-icon">
-							<img src="assets/images/service3.png" alt="icon">
+							<img src="assets/images/service1.png" alt="icon">
 						</div>
 						<!--service box content-->
 						<div class="service-box-content">
 							<div class="service-title">
-								<h3>Consultoría en Competencias Laborales</h3>
+								<h3>Integridad</h3>
 							</div>
 							<div class="service-description">
-								<p>Diseño y validación de modelos<br>de desempeño</p>
-							</div>
-							<!--service btn-->
-							<div class="service-btn">
-								<a href="#">Leer más<i class="bi bi-arrow-right"></i></a>
+								<p>Actuamos con ética, transparencia y coherencia en cada proceso.</p>
 							</div>
 						</div>
 					</div>
@@ -266,14 +351,10 @@
 						<!--service box content-->
 						<div class="service-box-content">
 							<div class="service-title">
-								<h3>Formación basada en<br>ABP</h3>
+								<h3>Excelencia</h3>
 							</div>
 							<div class="service-description">
-								<p>Aprendizaje intergeneracional y<br>significativo</p>
-							</div>
-							<!--service btn-->
-							<div class="service-btn">
-								<a href="#">Leer más<i class="bi bi-arrow-right"></i></a>
+								<p>Buscamos la mejora continua con precisión metodológica y resultados sostenibles.</p>
 							</div>
 						</div>
 					</div>
@@ -282,19 +363,17 @@
 					<!--service single box-->
 					<div class="service-single-box">
 						<div class="service-icon">
-							<img src="assets/images/service1.png" alt="icon">
+							<img src="assets/images/service3.png" alt="icon">
 						</div>
 						<!--service box content-->
 						<div class="service-box-content">
 							<div class="service-title">
-								<h3>Mentoring y Acompañamiento Profesional</h3>
+								<h3>Innovación</h3>
 							</div>
 							<div class="service-description">
-								<p>Programas sénior-júnior y<br>mentoring ejecutivo</p>
-							</div>
-							<!--service btn-->
-							<div class="service-btn">
-								<a href="#">Leer más<i class="bi bi-arrow-right"></i></a>
+								<p>Generamos soluciones creativas y con propósito que transforman la experiencia
+									laboral.
+								</p>
 							</div>
 						</div>
 					</div>
@@ -308,14 +387,12 @@
 						<!--service box content-->
 						<div class="service-box-content">
 							<div class="service-title">
-								<h3>Formación Organizacional y<br>Liderazgo por Competencias</h3>
+								<h3>Humanismo</h3>
 							</div>
 							<div class="service-description">
-								<p>Liderazgo ético y<br>estratégico</p>
-							</div>
-							<!--service btn-->
-							<div class="service-btn">
-								<a href="#">Leer más<i class="bi bi-arrow-right"></i></a>
+								<p>Ponemos a las personas en el centro, reconociendo su dignidad, potencial y
+									complejidad.
+								</p>
 							</div>
 						</div>
 					</div>
@@ -329,14 +406,11 @@
 						<!--service box content-->
 						<div class="service-box-content">
 							<div class="service-title">
-								<h3>Formación Psicoeducativa en<br>Entornos Laborales</h3>
+								<h3>Flexibilidad</h3>
 							</div>
 							<div class="service-description">
-								<p>Bienestar y madurez<br>profesional</p>
-							</div>
-							<!--service btn-->
-							<div class="service-btn">
-								<a href="#">Leer más<i class="bi bi-arrow-right"></i></a>
+								<p>Aplicamos método con criterio, adaptándonos a los contextos sin perder coherencia
+									técnica.</p>
 							</div>
 						</div>
 					</div>
@@ -350,37 +424,50 @@
 						<!--service box content-->
 						<div class="service-box-content">
 							<div class="service-title">
-								<h3>Investigación Aplicada en<br>Psicología del Trabajo</h3>
+								<h3>Colaboración</h3>
 							</div>
 							<div class="service-description">
-								<p>Evidencia científica al servicio<br>de la gestión humana</p>
+								<p>Construimos resultados compartidos desde la diversidad de saberes y experiencias.</p>
 							</div>
-							<!--service btn-->
-							<div class="service-btn">
-								<a href="#">Leer más<i class="bi bi-arrow-right"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<!--service single box-->
+					<div class="service-single-box">
+						<div class="service-icon">
+							<img src="assets/images/service1.png" alt="icon">
+						</div>
+						<!--service box content-->
+						<div class="service-box-content">
+							<div class="service-title">
+								<h3>Responsabilidad</h3>
+							</div>
+							<div class="service-description">
+								<p>Asumimos con compromiso ético el impacto de nuestras acciones sobre las personas y
+									las
+									organizaciones.</p>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</div>
-	<!--==================================================-->
-	<!-- End  life coach Service Area -->
-	<!--==================================================-->
 
-	<div class="brand-area" style="background-color: #fff;padding: 0px;">
-		<div class="container">
+			<!-- Quote final -->
 			<div class="row">
 				<div class="col-lg-12">
-					<hr style="border-bottom-color: #e6e6e6;border-bottom-style: solid;height: 2px;">
-					<h1 style="text-align: center;font-size: 30px;line-height: 42px;color: #0A3831;">“Sin reflexión no
-						hay aprendizaje,<br>sin indicadores no hay evaluación.”</h1>
-					<hr style="border-bottom-color: #e6e6e6;border-bottom-style: solid;height: 2px;">
+					<div class="quote-box">
+						"Creemos que el conocimiento cobra sentido cuando mejora la experiencia humana en el trabajo."
+					</div>
 				</div>
 			</div>
+
 		</div>
 	</div>
+	<!--==================================================-->
+	<!-- End  life coach About Area -->
+	<!--==================================================-->
+
 
 
 	<!--==================================================-->
@@ -418,10 +505,10 @@
 						</div>
 						<div class="company-widget-info">
 							<ul>
-								<li><a href="#">Identidad Institucional</a></li>
-								<li><a href="#">Cultura LUMA</a></li>
+								<li><a href="identidad-institucional.html">Identidad Institucional</a></li>
+								<li><a href="cultura-luma.html">Cultura LUMA</a></li>
 								<li><a href="#">Ecosistema de Servicios</a></li>
-								<li><a href="#">Contacto</a></li>
+								<li><a href="contact.html">Contacto</a></li>
 							</ul>
 						</div>
 					</div>
@@ -487,7 +574,6 @@
 	<!--==================================================-->
 	<!-- Start scrollup section Section -->
 	<!--==================================================-->
-
 
 
 
