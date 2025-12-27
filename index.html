@@ -57,7 +57,11 @@
 			font-weight: 700;
 			line-height: 55px;
 		}
+		html {
+			scroll-behavior: smooth;
+		}
 	</style>
+	
 	<!-- modernizr js -->
 	<script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
 </head>
@@ -182,13 +186,13 @@
 						</div>
 						<!--hero-button-->
 						<div class="section-button">
-							<a href="#">Avanza<i class="bi bi-arrow-right"></i></a>
+							<a href="#plan-area">Avanza<i class="bi bi-arrow-right"></i></a>
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-6 col-md-6">
 					<div class="hero-thumb">
-						<img src="assets/images/hero-thumb.png" alt="hero img">
+						<img id="hero-img" src="assets/images/hero-thumb.png" alt="hero img">
 					</div>
 				</div>
 			</div>
@@ -202,7 +206,7 @@
 	<!--==================================================-->
 	<!-- Start  life coach Plan Area -->
 	<!--==================================================-->
-	<div class="plan-area">
+	<div class="plan-area" id="plan-area">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
@@ -536,6 +540,27 @@
 
 	<!-- theme js -->
 	<script src="assets/js/theme.js"></script>
+
+	<script>
+		// Array con las rutas de tus 5 imágenes
+		const images = [
+			'assets/images/hero1.png',
+			'assets/images/hero2.png',
+			'assets/images/hero4.png'
+		];
+
+		// Seleccionar la imagen aleatoriamente
+		const randomIndex = Math.floor(Math.random() * images.length);
+		const heroImg = document.getElementById('hero-img');
+
+		// Cambiar la imagen
+		heroImg.src = images[randomIndex];
+
+		setInterval(() => {
+			const randomIndex = Math.floor(Math.random() * images.length);
+			heroImg.src = images[randomIndex];
+		}, 3000); // 5000ms = 5 segundos
+	</script>
 </body>
 
 </html>
