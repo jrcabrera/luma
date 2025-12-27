@@ -1140,6 +1140,8 @@ a.active1:hover:after{
     color: #E3DAC9;
     margin-bottom: 20px;
     opacity: 0.702;
+    word-break: break-word;
+    overflow-wrap: break-word;
 }
 .company-widget-address ul li{
     list-style: none;
