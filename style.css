@@ -1175,8 +1175,8 @@ a.active1:hover:after{
 .breadcumb-area {
     background: url(assets/images/bridcam.png);
     background-repeat: no-repeat;
-    /*background-position: center center;*/
-    background-position: center 40%;
+    background-position: center center;
+    /*background-position: center 60%;*/
     background-size: cover;
     height: 370px;
     position: relative;
