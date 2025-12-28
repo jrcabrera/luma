@@ -22,6 +22,39 @@
     <link rel="stylesheet" href="style.css" type="text/css" media="all">
     <link rel="stylesheet" href="assets/css/responsive.css" type="text/css" media="all">
     <script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
+	<style>
+				/* Submenu general */
+		.header-menu ul li {
+			position: relative;
+		}
+
+		/* Primer nivel */
+		.header-menu ul li .sub-menu {
+			position: absolute;
+			top: 100%;
+			left: 0;
+			min-width: 260px;
+			display: none;
+			background: #fff;
+			z-index: 99;
+		}
+
+		/* Mostrar primer nivel */
+		.header-menu ul li:hover > .sub-menu {
+			display: block;
+		}
+
+		/* ====== SEGUNDO NIVEL ====== */
+		.header-menu ul li .sub-menu li .sub-menu {
+			top: 0;
+			left: 100%;
+		}
+
+		/* Mostrar segundo nivel */
+		.header-menu ul li .sub-menu li:hover > .sub-menu {
+			display: block;
+		}
+	</style>    
 </head>
 
 <body>
@@ -50,17 +83,21 @@
                                     <li><a href="cultura-luma.html">• Cultura LUMA</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#">Ecosistema de Servicios +</a>
-                                <ul class="sub-menu">
-                                    <li><a href="servicio-consultoria-competencias.html">• Consultoría en Competencias
-                                            Laborales</a></li>
-                                    <li><a href="servicio-formacion-abp.html">• Formación basada en ABP</a></li>
-                                    <li><a href="servicio-mentoring.html">• Mentoring y Acompañamiento Profesional</a>
-                                    </li>
-                                    <li><a href="servicio-psicoeducativa.html">• Formación Psicoeducativa</a></li>
-                                    <li><a href="servicio-investigacion.html">• Investigación Aplicada</a></li>
-                                </ul>
-                            </li>
+							<li><a href="#">Ecosistema de Servicios +</a>
+								<ul class="sub-menu">
+									<li><a href="experiencia.html">• Nuestra experiencia</a></li>
+									<li>
+										<a href="#">• Servicios +</a>
+											<ul class="sub-menu">
+												<li><a href="servicio-consultoria-competencias.html">• Consultoría en competencias laborales</a></li>
+												<li><a href="servicio-formacion-abp.html">• Formación basada en ABP</a></li>
+												<li><a href="servicio-mentoring.html">• Mentoring y acompañamiento profesional</a></li>
+												<li><a href="servicio-psicoeducativa.html">• Formación psicoeducativa</a></li>
+												<li><a href="servicio-investigacion.html">• Investigación aplicada</a></li>
+											</ul>
+									</li>									
+								</ul>
+							</li>
                         </ul>
                         <div class="header-menu-button">
                             <a href="contact.html">Contáctenos<i class="bi bi-arrow-right"></i></a>
@@ -82,16 +119,21 @@
                             <li><a href="cultura-luma.html">• Cultura LUMA</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Ecosistema de Servicios +</a>
-                        <ul class="sub-menu">
-                            <li><a href="servicio-consultoria-competencias.html">• Consultoría en Competencias</a></li>
-                            <li><a href="servicio-formacion-abp.html">• Formación ABP</a></li>
-                            <li><a href="servicio-mentoring.html">• Mentoring</a></li>
-                            <li><a href="servicio-liderazgo.html">• Liderazgo</a></li>
-                            <li><a href="servicio-psicoeducativa.html">• Formación Psicoeducativa</a></li>
-                            <li><a href="servicio-investigacion.html">• Investigación</a></li>
-                        </ul>
-                    </li>
+					<li><a href="#">Ecosistema de Servicios +</a>
+						<ul class="sub-menu">
+							<li><a href="experiencia.html">• Nuestra experiencia</a></li>
+							<li>
+								<a href="#">• Servicios +</a>
+									<ul class="sub-menu">
+										<li><a href="servicio-consultoria-competencias.html">Consultoría en competencias laborales</a></li>
+										<li><a href="servicio-formacion-abp.html">Formación basada en ABP</a></li>
+										<li><a href="servicio-mentoring.html">Mentoring y acompañamiento profesional</a></li>
+										<li><a href="servicio-psicoeducativa.html">Formación psicoeducativa</a></li>
+										<li><a href="servicio-investigacion.html">Investigación aplicada</a></li>
+									</ul>
+							</li>									
+						</ul>
+					</li>
                     <li><a href="contact.html">Contacto</a></li>
                 </ul>
             </nav>
@@ -240,7 +282,7 @@
                             <ul>
                                 <li><a href="identidad-institucional.html">Identidad Institucional</a></li>
                                 <li><a href="cultura-luma.html">Cultura LUMA</a></li>
-                                <li><a href="ecosistema-de-servicios.html">Ecosistema de Servicios</a></li>
+                                <li><a href="experiencia.html">Nuestra experiencia</a></li>
                                 <li><a href="contact.html">Contacto</a></li>
                             </ul>
                         </div>

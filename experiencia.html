@@ -5,20 +5,8 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<title>LUMA Gestión Humana y Mentoring</title>
-	 <!-- SEO básico -->
-    <meta name="description" content="Impulsamos el desarrollo humano y organizacional con método, humanidad y claridad. Consultoría, formación ABP, mentoring y psicología del trabajo.">
-    <meta name="keywords" content="psicología del trabajo, desarrollo organizacional, consultoría en competencias laborales, formación ABP, mentoring profesional, formación empresarial">
-    <meta name="author" content="Luma Gestión">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Open Graph (Redes Sociales) -->
-    <meta property="og:title" content="Consultoría en Psicología del Trabajo y Desarrollo Organizacional">
-    <meta property="og:description" content="Formación, mentoring y consultoría con método, humanidad y claridad. Impulsamos personas y organizaciones.">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="es_ES">
-
-	<meta name="robots" content="index, follow">
-
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Favicon -->
 	<link rel="icon" type="image/png" sizes="56x56" href="assets/images/fav-icon/fav.png">
 	<!-- bootstrap CSS -->
@@ -50,24 +38,35 @@
 	<!-- responsive CSS -->
 	<link rel="stylesheet" href="assets/css/responsive.css" type="text/css" media="all">
 
+	<!-- modernizr js -->
+	<script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
 	<style>
-		.hero-main-title h1 {
-			/*font-style: italic;*/
-			font-size: 45px;
-			font-weight: 700;
-			line-height: 55px;
+		ul:has(.check-icon) {
+			list-style-type: none;
 		}
-		.cursiva{
-			font-style: italic;
+
+		.check-icon {
+			display: inline-block;
+			height: 18px;
+			width: 18px;
+			line-height: 20px;
+			text-align: center;
+			color: rgb(255, 255, 255);
+			margin-right: 9px;
+			background: #8b1e43;
+			border-radius: 50%;
 		}
-		html {
-			scroll-behavior: smooth;
+
+		.about-right-2 {
+			padding-left: 28px;
 		}
-		.comapny-widget-desc p {
-			word-break: break-word;
-			overflow-wrap: break-word;
+
+		.about-left-2 {
+			padding-right: 28px;
 		}
-		/* Submenu general */
+	</style>
+	<style>
+				/* Submenu general */
 		.header-menu ul li {
 			position: relative;
 		}
@@ -98,10 +97,7 @@
 		.header-menu ul li .sub-menu li:hover > .sub-menu {
 			display: block;
 		}
-	</style>
-	
-	<!-- modernizr js -->
-	<script src="assets/js/vendor/modernizr-3.5.0.min.js"></script>
+	</style>   	
 </head>
 
 <body>
@@ -207,74 +203,20 @@
 	<!-- End  Mobile Menu Area -->
 	<!--==================================================-->
 
-
-
 	<!--==================================================-->
-	<!-- Start  life coach Hero Area -->
+	<!-- Start Life coach Bridcamb Area -->
 	<!--==================================================-->
-	<div class="hero-area d-flex align-items-center">
-		<div class="container">
-			<div class="row d-flex align-items-center">
-				<div class="col-lg-6 col-md-6">
-					<!--hero-content-->
-					<div class="hero-content">
-						<div class="hero-sub-title">
-							<h5>MÉTODO • HUMANIDAD • CLARIDAD</h5>
-						</div>
-						<div class="hero-main-title">
-							<h1>Lideramos procesos</h1>
-							<h1>Unimos esfuerzos</h1>
-							<h1>Maximizamos soluciones</h1>
-						</div>
-						<!--hero-description-->
-						<div class="hero-description">
-							<p class="cursiva">"La experiencia no es más que actuar en lo cierto y en lo incierto, en lo simple y en lo
-								complejo."</p>
-						</div>
-						<!--hero-button-->
-						<div class="section-button">
-							<a href="#plan-area">Avanza<i class="bi bi-arrow-right"></i></a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-6 col-md-6">
-					<div class="hero-thumb">
-						<img id="hero-img" src="assets/images/hero-thumb.png" alt="hero img">
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!--==================================================-->
-	<!-- End  life coach Hero Area -->
-	<!--==================================================-->
-
-
-	<!--==================================================-->
-	<!-- Start  life coach Plan Area -->
-	<!--==================================================-->
-	<div class="plan-area" id="plan-area">
+	<div class="breadcumb-area d-flex align-items-center">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-12">
-					<!--section title-->
-					<div class="section-title text-center">
-						<div class="section-sub-title">
-							<h4>¿POR QUÉ ELEGIRNOS?</h4>
+				<div class="col-md-12">
+					<!--breadcumb-content-->
+					<div class="breacumb-content">
+						<div class="breadcumb-title">
+							<h1>Nuestra experiencia</h1>
 						</div>
-						<div class="section-main-title">
-							<h1>Pensamos con método, actuamos con</h1>
-							<h1>humanidad y comunicamos con claridad.</h1>
-						</div>
-						<div class="section-description">
-							<p>Impulsamos el desarrollo humano y organizacional a través de procesos reales de
-								aprendizaje, gestión y acompañamiento que fortalecen la confianza y el desempeño en los
-								equipos.</p>
-						</div>
-						<div class="section-button">
-							<a class="active1" href="identidad-institucional.html">Identidad Institucional<i
-									class="bi bi-arrow-right"></i></a>
-							<a href="cultura-luma.html">Cultura LUMA<i class="bi bi-arrow-right"></i></a>
+						<div class="breadcumb-content-text">
+							<a href="index.html">Inicio</a><i class="fas fa-angle-right"></i><span>Nuestra experiencia</span>
 						</div>
 					</div>
 				</div>
@@ -282,155 +224,51 @@
 		</div>
 	</div>
 	<!--==================================================-->
-	<!-- End  life coach Plan Area -->
+	<!-- End  Moving Bridcamb Area -->
 	<!--==================================================-->
 
 
-
 	<!--==================================================-->
-	<!-- Start  life coach Service Area -->
+	<!-- Start  life coach About Area -->
 	<!--==================================================-->
-	<div class="serivce-area">
+	<div class="about-area">
 		<div class="container">
-			<div class="row">
+			<div class="row align-items-center">
 				<div class="col-lg-12">
-					<!--section title-->
-					<div class="section-title text-center">
-						<div class="section-sub-title">
-							<h4>ECOSISTEMA DE SERVICIOS</h4>
-						</div>
-						<div class="section-main-title">
-							<h1>Aprendizaje, experiencia y propósito<br>al servicio del talento humano.</h1>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row justify-content-center">
-				<div class="col-lg-4 col-md-6">
-					<!--service single box-->
-					<div class="service-single-box">
-						<div class="service-icon">
-							<img style="width: 15%;" src="assets/images/1.png" alt="icon">
-						</div>
-						<!--service box content-->
-						<div class="service-box-content">
-							<div class="service-title">
-								<h3>Consultoría en Competencias Laborales</h3>
+					<div class="about-left-2">
+						<div class="section-title">
+							<div class="section-main-title">
+								<h1>Nuestra experiencia</h1>
 							</div>
-							<div class="service-description">
-								<p>Diseño y validación de modelos<br>de desempeño</p>
+							<div class="section-description" style="text-align: justify;">
+								<p>Nuestro ecosistema de servicios se ha construido acompañando a organizaciones, equipos y líderes, principalmente en instituciones privadas y también en contextos educativos, siempre desde una comprensión situada de su realidad. La experiencia acumulada nos ha permitido trabajar en escenarios diversos, donde los desafíos no se resuelven con soluciones estándar, sino con lectura crítica, diseño contextual y evaluación consciente de los resultados alcanzados.</p>
+								<p>A lo largo de estos procesos, hemos acompañado situaciones como:</p>
+								
+								<p><i class="bi bi-check2 check-icon"></i><b>Alta rotación temprana</b> asociada a brechas entre selección, formación inicial y expectativas reales de desempeño.</p>
+								<p><i class="bi bi-check2 check-icon"></i><b>Modelos de competencias inaplicables</b> en la operación diaria, que requerían ser rediseñados para generar claridad y uso efectivo en selección, formación y evaluación.</p>
+								<p><i class="bi bi-check2 check-icon"></i><b>Procesos de análisis inconclusos o fallidos</b>, que dejaron a las organizaciones sin criterios claros para tomar decisiones sobre su talento.</p>
+								<p><i class="bi bi-check2 check-icon"></i><b>Iniciativas formativas con bajo impacto</b>, donde el reto no era el contenido, sino la falta de aplicación práctica y transferencia al puesto de trabajo.</p>
+								<p><i class="bi bi-check2 check-icon"></i><b>Áreas de gestión humana con visión estratégica limitada</b>, que necesitaban fortalecer su capacidad técnica, sus procesos y sus indicadores para sostener el cambio.</p>
+								<p><i class="bi bi-check2 check-icon"></i><b>Procesos de cambio organizacional</b> iniciados sin una comprensión previa de la cultura, los actores y las dinámicas internas.</p>
+
+								<p>En todos estos contextos, el trabajo se ha caracterizado por el <b>diseño a la medida</b>, la <b>co-construcción con los actores clave</b> y la evaluación continua de cada fase del proceso. Más allá de resolver una situación puntual, el acompañamiento busca instalar mayor claridad, elevar el nivel de comprensión de la complejidad organizacional y fortalecer la capacidad de las organizaciones para tomar mejores decisiones a futuro.</p>
+								<p>Nuestra experiencia nos ha mostrado que no todos los desafíos requieren acción inmediata, sino una clara <b>comprensión antes de decidir.</b> Por eso, acompañamos a organizaciones que están dispuestas a detenerse, analizar su contexto y construir soluciones con sentido y sostenibilidad.</p>
+								<p><b>Si tu organización se encuentra en ese punto, es posible iniciar una conversación para comprender su momento y acompañarlo con criterio.</b></p>
 							</div>
-							<!--service btn-->
-							<div class="service-btn">
-								<a href="servicio-consultoria-competencias.html">Conocer más<i
-										class="bi bi-arrow-right"></i></a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<!--service single box-->
-					<div class="service-single-box">
-						<div class="service-icon">
-							<img style="width: 15%;" style="width: 15%;" src="assets/images/2.png" alt="icon">
-						</div>
-						<!--service box content-->
-						<div class="service-box-content">
-							<div class="service-title">
-								<h3>Formación basada en<br>ABP</h3>
-							</div>
-							<div class="service-description">
-								<p>Formación orientada<br>a la práctica</p>
-							</div>
-							<!--service btn-->
-							<div class="service-btn">
-								<a href="servicio-formacion-abp.html">Conocer más<i class="bi bi-arrow-right"></i></a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<!--service single box-->
-					<div class="service-single-box">
-						<div class="service-icon">
-							<img style="width: 15%;" src="assets/images/3.png" alt="icon">
-						</div>
-						<!--service box content-->
-						<div class="service-box-content">
-							<div class="service-title">
-								<h3>Mentoring y Acompañamiento Profesional</h3>
-							</div>
-							<div class="service-description">
-								<p>Mentoring para profesionales<br>de Gestión Humana.</p>
-							</div>
-							<!--service btn-->
-							<div class="service-btn">
-								<a href="servicio-mentoring.html">Conocer más<i class="bi bi-arrow-right"></i></a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<!--service single box-->
-					<div class="service-single-box">
-						<div class="service-icon">
-							<img style="width: 15%;" src="assets/images/4.png" alt="icon">
-						</div>
-						<!--service box content-->
-						<div class="service-box-content">
-							<div class="service-title">
-								<h3>Formación Psicoeducativa en<br>Entornos Laborales</h3>
-							</div>
-							<div class="service-description">
-								<p>Bienestar y madurez<br>profesional</p>
-							</div>
-							<!--service btn-->
-							<div class="service-btn">
-								<a href="servicio-psicoeducativa.html">Conocer más<i class="bi bi-arrow-right"></i></a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6">
-					<!--service single box-->
-					<div class="service-single-box">
-						<div class="service-icon">
-							<img style="width: 15%;" src="assets/images/5.png" alt="icon">
-						</div>
-						<!--service box content-->
-						<div class="service-box-content">
-							<div class="service-title">
-								<h3>Investigación Aplicada en<br>Psicología del Trabajo</h3>
-							</div>
-							<div class="service-description">
-								<p>Evidencia científica al servicio<br>de la gestión humana</p>
-							</div>
-							<!--service btn-->
-							<div class="service-btn">
-								<a href="servicio-investigacion.html">Conocer más<i class="bi bi-arrow-right"></i></a>
+							<div class="section-button">
+								<a class="active1" href="contact.html"> Iniciar una conversación<i class="bi bi-arrow-right"></i></a>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+
 		</div>
 	</div>
 	<!--==================================================-->
-	<!-- End  life coach Service Area -->
+	<!-- End  life coach About Area -->
 	<!--==================================================-->
 
-	<div class="brand-area" style="background-color: #fff;padding: 0px;">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<hr style="border-bottom-color: #e6e6e6;border-bottom-style: solid;height: 2px;">
-					<h1 style="text-align: center;font-size: 30px;line-height: 42px;color: #0A3831;">“Sin reflexión no
-						hay aprendizaje,<br>sin indicadores no hay evaluación.”</h1>
-					<hr style="border-bottom-color: #e6e6e6;border-bottom-style: solid;height: 2px;">
-				</div>
-			</div>
-		</div>
-	</div>
 
 
 	<!--==================================================-->
@@ -439,7 +277,7 @@
 	<div class="footer-area">
 		<div class="container">
 			<div class="row footer_bg">
-				<div class="col-lg-5 col-md-6">
+				<div class="col-lg-6 col-md-6">
 					<!--footer-widget-item-->
 					<div class="footer-widget-item">
 						<div class="footer-logo">
@@ -476,7 +314,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-4 col-md-6">
+				<div class="col-lg-3 col-md-6">
 					<!--footer-widget-item-->
 					<div class="footer-widget-item">
 						<div class="footer-widget-title">
@@ -587,25 +425,6 @@
 
 	<!-- theme js -->
 	<script src="assets/js/theme.js"></script>
-
-	<script>
-		// Array con las rutas de tus 5 imágenes
-		const images = [
-			'assets/images/hero1.png'
-		];
-
-		// Seleccionar la imagen aleatoriamente
-		const randomIndex = Math.floor(Math.random() * images.length);
-		const heroImg = document.getElementById('hero-img');
-
-		// Cambiar la imagen
-		heroImg.src = images[randomIndex];
-
-		/*setInterval(() => {
-			const randomIndex = Math.floor(Math.random() * images.length);
-			heroImg.src = images[randomIndex];
-		}, 3000); // 5000ms = 5 segundos*/
-	</script>
 </body>
 
 </html>
