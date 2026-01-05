@@ -1173,10 +1173,10 @@ a.active1:hover:after{
 <!--  Life coach  breadcumb-area -->
 <!-- ============================================================== -->*/
 .breadcumb-area {
-    background: url(assets/images/blog6.png);
+    background: url(assets/images/luma_bn.jpg);
     background-repeat: no-repeat;
-    background-position: center center;
-    /*background-position: center 60%;*/
+    /*background-position: center center;*/
+    background-position: center 40%;
     background-size: cover;
     height: 370px;
     position: relative;
