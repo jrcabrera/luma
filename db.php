@@ -97,7 +97,7 @@ function seedInitialAdminFromEnv(PDO $pdo): void
     ]);
 }
 
-function findAdminUser(PDO $pdo, string $usuario): array|false
+function findAdminUser(PDO $pdo, string $usuario)
 {
     $stmt = $pdo->prepare('SELECT id, usuario, nombre, clave_hash, activo FROM admin_users WHERE usuario = :usuario LIMIT 1');
     $stmt->execute([':usuario' => $usuario]);
