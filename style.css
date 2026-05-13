@@ -933,9 +933,12 @@ a.active1:hover:after{
 .single-blog-thumb{
     overflow: hidden;
     transition: .5s;
+    height: 240px;
 }
 .single-blog-thumb img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
     transition: .5s;
 }
 .single-blog-box:hover .single-blog-thumb img {

@@ -47,7 +47,7 @@ if ($id > 0) {
         .header-menu ul li .sub-menu li .sub-menu { top: 0; left: 100%; }
         .header-menu ul li .sub-menu li:hover > .sub-menu { display: block; }
         .blog-body { max-width: 900px; margin: 40px auto; }
-        .blog-cover { width: 100%; border-radius: 10px; margin-bottom: 18px; object-fit: cover; max-height: 420px; }
+        .blog-cover { max-width: 100%; height: auto; border-radius: 10px; margin-bottom: 18px; display: block; }
         .blog-text { font-size: 17px; line-height: 1.75; color: #343434; }
     </style>
 </head>
