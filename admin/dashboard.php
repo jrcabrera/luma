@@ -85,7 +85,7 @@ $blogs = $stmt->fetchAll();
                 </div>
                 <div class="full">
                     <label>Contenido</label>
-                    <textarea name="contenido" required placeholder="Contenido del blog"></textarea>
+                    <textarea name="contenido" placeholder="Contenido del blog"></textarea>
                 </div>
                 <div class="full">
                     <label>Foto (jpg, png, webp, gif - max 5MB)</label>
@@ -169,7 +169,22 @@ tinymce.init({
     menubar: false,
     height: 320,
     plugins: 'lists link image table code',
-    toolbar: 'undo redo | blocks | bold italic underline | bullist numlist | link image table | alignleft aligncenter alignright | code'
+    toolbar: 'undo redo | blocks | bold italic underline | bullist numlist | link image table | alignleft aligncenter alignright | code',
+    setup: function(editor) {
+        editor.on('submit', function() {
+            editor.save();
+        });
+    }
+});
+
+document.querySelector('form[action="guardar-blog.php"]').addEventListener('submit', function(e) {
+    tinymce.triggerSave();
+    var contenido = document.querySelector('textarea[name="contenido"]').value;
+    if (!contenido || contenido.trim() === '' || contenido.replace(/<[^>]*>/g,'').trim() === '') {
+        e.preventDefault();
+        alert('El campo Contenido es obligatorio.');
+        tinymce.get(0) && tinymce.get(0).focus();
+    }
 });
 </script>
 </body>
