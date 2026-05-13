@@ -48,7 +48,10 @@ $blogs = $stmt->fetchAll();
 <body>
 <div class="wrap">
     <div class="top">
-        <h1>Administrador de Blog</h1>
+        <div>
+            <h1>Administrador de Blog</h1>
+            <button class="btn" id="btn-nuevo-blog" type="button" style="margin-top: 12px;">+ Nuevo blog</button>
+        </div>
         <form class="inline-form" method="post" action="logout.php">
             <input type="hidden" name="csrf_token" value="<?php echo h(csrfToken()); ?>">
             <button class="btn" type="submit">Cerrar sesión</button>
@@ -58,43 +61,6 @@ $blogs = $stmt->fetchAll();
     <?php if ($msg !== ''): ?>
         <div class="msg"><?php echo h($msg); ?></div>
     <?php endif; ?>
-
-    <div class="card">
-        <h2>Nuevo artículo</h2>
-        <form method="post" action="guardar-blog.php" enctype="multipart/form-data">
-            <input type="hidden" name="csrf_token" value="<?php echo h(csrfToken()); ?>">
-            <div class="grid">
-                <div>
-                    <label>Título</label>
-                    <input type="text" name="titulo" maxlength="255" required>
-                </div>
-                <div>
-                    <label>Autor</label>
-                    <input type="text" name="autor" maxlength="120" required>
-                </div>
-                <div>
-                    <label>Estado</label>
-                    <select name="estado" required>
-                        <option value="B" selected>B - Borrador</option>
-                        <option value="P">P - Publicado</option>
-                    </select>
-                </div>
-                <div class="full">
-                    <label>Resumen</label>
-                    <textarea name="resumen" placeholder="Texto corto para la cabecera del blog"></textarea>
-                </div>
-                <div class="full">
-                    <label>Contenido</label>
-                    <textarea name="contenido" placeholder="Contenido del blog"></textarea>
-                </div>
-                <div class="full">
-                    <label>Foto (jpg, png, webp, gif - max 5MB)</label>
-                    <input type="file" name="imagen" accept=".jpg,.jpeg,.png,.webp,.gif">
-                </div>
-            </div>
-            <button class="btn" type="submit">Guardar</button>
-        </form>
-    </div>
 
     <div class="card">
         <h2>Artículos cargados</h2>
@@ -161,13 +127,53 @@ $blogs = $stmt->fetchAll();
             </tbody>
         </table>
     </div>
+
+    <div class="card" id="form-nuevo-blog" style="display: none;">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <h2 style="margin: 0;">Nuevo artículo</h2>
+            <button type="button" id="btn-cancelar" class="btn" style="background: #666; margin: 0;">Cancelar</button>
+        </div>
+        <form method="post" action="guardar-blog.php" enctype="multipart/form-data">
+            <input type="hidden" name="csrf_token" value="<?php echo h(csrfToken()); ?>">
+            <div class="grid">
+                <div>
+                    <label>Título</label>
+                    <input type="text" name="titulo" maxlength="255" required>
+                </div>
+                <div>
+                    <label>Autor</label>
+                    <input type="text" name="autor" maxlength="120" required>
+                </div>
+                <div>
+                    <label>Estado</label>
+                    <select name="estado" required>
+                        <option value="B" selected>B - Borrador</option>
+                        <option value="P">P - Publicado</option>
+                    </select>
+                </div>
+                <div class="full">
+                    <label>Resumen</label>
+                    <textarea name="resumen" placeholder="Texto corto para la cabecera del blog" id="editor-resumen"></textarea>
+                </div>
+                <div class="full">
+                    <label>Contenido</label>
+                    <textarea name="contenido" placeholder="Contenido del blog"></textarea>
+                </div>
+                <div class="full">
+                    <label>Foto (jpg, png, webp, gif - max 5MB)</label>
+                    <input type="file" name="imagen" accept=".jpg,.jpeg,.png,.webp,.gif">
+                </div>
+            </div>
+            <button class="btn" type="submit">Guardar</button>
+        </form>
+    </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/tinymce@6.8.4/tinymce.min.js" referrerpolicy="origin"></script>
 <script>
 tinymce.init({
-    selector: 'textarea[name="contenido"]',
+    selector: 'textarea[name="resumen"], textarea[name="contenido"]',
     menubar: false,
-    height: 320,
+    height: 220,
     plugins: 'lists link image table code',
     toolbar: 'undo redo | blocks | bold italic underline | bullist numlist | link image table | alignleft aligncenter alignright | code',
     setup: function(editor) {
@@ -183,8 +189,20 @@ document.querySelector('form[action="guardar-blog.php"]').addEventListener('subm
     if (!contenido || contenido.trim() === '' || contenido.replace(/<[^>]*>/g,'').trim() === '') {
         e.preventDefault();
         alert('El campo Contenido es obligatorio.');
-        tinymce.get(0) && tinymce.get(0).focus();
     }
+});
+
+// Toggle form visibility
+document.getElementById('btn-nuevo-blog').addEventListener('click', function() {
+    var form = document.getElementById('form-nuevo-blog');
+    form.style.display = form.style.display === 'none' ? 'block' : 'none';
+    if (form.style.display === 'block') {
+        form.scrollIntoView({ behavior: 'smooth' });
+    }
+});
+
+document.getElementById('btn-cancelar').addEventListener('click', function() {
+    document.getElementById('form-nuevo-blog').style.display = 'none';
 });
 </script>
 </body>
